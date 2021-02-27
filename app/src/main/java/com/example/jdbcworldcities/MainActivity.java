@@ -46,8 +46,8 @@ public class MainActivity extends Activity {
     private Runnable background = new Runnable() {
         public void run() {
             String URL = "jdbc:mysql://frodo.bentley.edu:3306/world";
-            String username = "Android";
-            String password = "android";
+            String username = "harry";
+            String password = "harry";
 
             try { //load driver into VM memory
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -57,12 +57,13 @@ public class MainActivity extends Activity {
 
 
             Statement stmt = null;
-            Connection con = null;
-            try { //create connection to database
-                con = DriverManager.getConnection(
+         //   Connection con = null;
+            try ( //create connection to database
+                Connection con = DriverManager.getConnection(
                         URL,
                         username,
-                        password);
+                        password)){
+
                 stmt = con.createStatement();
 
                 ResultSet result = stmt.executeQuery(
@@ -89,14 +90,7 @@ public class MainActivity extends Activity {
                 Log.e("City", "SQL Error");
                 e.printStackTrace();
             }
-            finally {
-                try { //close may throw checked exception
-                    if (con != null)
-                        con.close();
-                } catch(SQLException e) {
-                    Log.e("JDBC", "close connection failed");
-                }
-            };
+
         } //run
     }; //background
 
