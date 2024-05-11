@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/28-JDBCWorldCitiesSerialized.iml" filepath="$PROJECT_DIR$/28-JDBCWorldCitiesSerialized.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/28-JDBCWorldCitiesSerialized.iml" filepath="$PROJECT_DIR$/.idea/modules/28-JDBCWorldCitiesSerialized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/28-JDBCWorldCitiesSerialized.app.unitTest.iml" />
     </modules>
   </component>
 </project>
